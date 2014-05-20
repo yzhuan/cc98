@@ -5,7 +5,15 @@
 
 from scrapy.item import Item, Field
 
-class Cc98Item(Item):
-    # define the fields for your item here like:
-    # name = Field()
-    pass
+class CC98Item(Item):
+    title=Field()
+    link=Field()
+
+class PostItem(Item):
+    content=Field()
+    author=Field()
+    pub_date=Field()
+
+class TopicItem(Item):
+    title=Field()
+    post=[]
